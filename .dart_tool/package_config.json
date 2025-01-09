@@ -99,15 +99,15 @@
     },
     {
       "name": "camera",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/camera-0.10.6",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/camera-0.11.0+2",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.3"
     },
     {
-      "name": "camera_android",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/camera_android-0.10.9+17",
+      "name": "camera_android_camerax",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/camera_android_camerax-0.6.11",
       "packageUri": "lib/",
-      "languageVersion": "3.5"
+      "languageVersion": "3.6"
     },
     {
       "name": "camera_avfoundation",
@@ -153,15 +153,15 @@
     },
     {
       "name": "connectivity_plus",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/connectivity_plus-6.1.1",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/connectivity_plus-3.0.6",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "2.12"
     },
     {
       "name": "connectivity_plus_platform_interface",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/connectivity_plus_platform_interface-2.0.1",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/connectivity_plus_platform_interface-1.2.4",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "2.12"
     },
     {
       "name": "convert",
@@ -1226,7 +1226,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2025-01-09T10:49:30.330845Z",
+  "generated": "2025-01-09T12:07:04.422483Z",
   "generator": "pub",
   "generatorVersion": "3.6.0",
   "flutterRoot": "file:///Users/macbookpro/development/flutter3",
