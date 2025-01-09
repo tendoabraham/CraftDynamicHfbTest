@@ -99,15 +99,15 @@
     },
     {
       "name": "camera",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/camera-0.11.0+2",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/camera-0.10.6",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.2"
     },
     {
-      "name": "camera_android_camerax",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/camera_android_camerax-0.6.11",
+      "name": "camera_android",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/camera_android-0.10.9+17",
       "packageUri": "lib/",
-      "languageVersion": "3.6"
+      "languageVersion": "3.5"
     },
     {
       "name": "camera_avfoundation",
@@ -1226,7 +1226,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2025-01-09T08:49:51.922913Z",
+  "generated": "2025-01-09T10:49:30.330845Z",
   "generator": "pub",
   "generatorVersion": "3.6.0",
   "flutterRoot": "file:///Users/macbookpro/development/flutter3",
