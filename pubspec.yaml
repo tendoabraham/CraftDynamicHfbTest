@@ -17,7 +17,7 @@ dependencies:
   encrypt: ^5.0.1
   flutter_easyloading: ^3.0.5
   flutter_secure_storage: any
-  fluttercontactpicker: ^4.7.0
+  # fluttercontactpicker: ^4.7.0
   flutter_native_contact_picker: ^0.0.10
   group_button: ^5.2.2
   hex: ^0.2.0
