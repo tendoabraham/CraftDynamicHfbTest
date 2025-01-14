@@ -164,6 +164,18 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "contact_picker_platform_interface",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/contact_picker_platform_interface-4.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "contact_picker_web",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/contact_picker_web-4.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "convert",
       "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/convert-3.1.2",
       "packageUri": "lib/",
@@ -426,6 +438,12 @@
       "rootUri": "file:///Users/macbookpro/development/flutter3/packages/flutter_web_plugins",
       "packageUri": "lib/",
       "languageVersion": "3.2"
+    },
+    {
+      "name": "fluttercontactpicker",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/fluttercontactpicker-4.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "fluttertoast",
@@ -1226,7 +1244,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2025-01-14T09:04:34.706884Z",
+  "generated": "2025-01-14T10:14:45.144600Z",
   "generator": "pub",
   "generatorVersion": "3.6.0",
   "flutterRoot": "file:///Users/macbookpro/development/flutter3",
