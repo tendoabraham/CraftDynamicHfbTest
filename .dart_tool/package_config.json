@@ -920,6 +920,12 @@
       "languageVersion": "3.6"
     },
     {
+      "name": "qr_code_scanner",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/qr_code_scanner-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "rsa_encrypt",
       "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/rsa_encrypt-2.0.0",
       "packageUri": "lib/",
@@ -1220,7 +1226,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2025-01-14T08:50:07.280593Z",
+  "generated": "2025-01-14T09:04:34.706884Z",
   "generator": "pub",
   "generatorVersion": "3.6.0",
   "flutterRoot": "file:///Users/macbookpro/development/flutter3",
