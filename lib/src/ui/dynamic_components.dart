@@ -1344,7 +1344,7 @@ class _DynamicPhonePickerFormWidgetState
 
   pickPhoneContact() async {
     try {
-      final Contact? contact = await _contactPicker.selectContact();
+      final Contact? contact = await _contactPicker.selectPhoneNumber();
       if (contact != null) {
         setState(() {
           controller.text = formatPhone(contact.selectedPhoneNumber ?? "")

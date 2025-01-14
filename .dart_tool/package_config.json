@@ -153,15 +153,15 @@
     },
     {
       "name": "connectivity_plus",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/connectivity_plus-3.0.6",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/connectivity_plus-6.1.1",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.2"
     },
     {
       "name": "connectivity_plus_platform_interface",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/connectivity_plus_platform_interface-1.2.4",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/connectivity_plus_platform_interface-2.0.1",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.18"
     },
     {
       "name": "convert",
@@ -1226,7 +1226,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2025-01-09T12:07:04.422483Z",
+  "generated": "2025-01-14T07:44:50.348562Z",
   "generator": "pub",
   "generatorVersion": "3.6.0",
   "flutterRoot": "file:///Users/macbookpro/development/flutter3",
