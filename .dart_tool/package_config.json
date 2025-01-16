@@ -1095,9 +1095,9 @@
     },
     {
       "name": "unique_identifier",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/unique_identifier-0.4.0",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/unique_identifier-0.2.0",
       "packageUri": "lib/",
-      "languageVersion": "3.5"
+      "languageVersion": "2.12"
     },
     {
       "name": "universal_platform",
@@ -1226,7 +1226,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2025-01-16T06:23:09.271746Z",
+  "generated": "2025-01-16T06:56:40.495214Z",
   "generator": "pub",
   "generatorVersion": "3.6.0",
   "flutterRoot": "file:///Users/macbookpro/development/flutter3",
