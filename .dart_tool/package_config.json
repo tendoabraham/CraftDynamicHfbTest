@@ -669,9 +669,9 @@
     },
     {
       "name": "lottie",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/lottie-3.3.0",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/lottie-2.7.0",
       "packageUri": "lib/",
-      "languageVersion": "3.6"
+      "languageVersion": "3.1"
     },
     {
       "name": "macros",
@@ -1226,7 +1226,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2025-01-16T07:00:36.910721Z",
+  "generated": "2025-01-16T07:04:16.257974Z",
   "generator": "pub",
   "generatorVersion": "3.6.0",
   "flutterRoot": "file:///Users/macbookpro/development/flutter3",
