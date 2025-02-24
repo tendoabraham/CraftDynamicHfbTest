@@ -33,7 +33,7 @@ class _DynamicCraftWrapperState extends State<DynamicCraftWrapper>
   final _initRepository = InitRepository();
   final _sessionRepository = SessionRepository();
   final _sharedPref = CommonSharedPref();
-  static const Duration idleDuration = Duration(seconds: 10);
+  static const Duration idleDuration = Duration(minutes: 2);
   Timer? _idleTimer;
   var _appTimeout = 100000;
 
