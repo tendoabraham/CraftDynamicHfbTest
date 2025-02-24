@@ -27,12 +27,14 @@ class DynamicCraftWrapper extends StatefulWidget {
   State<DynamicCraftWrapper> createState() => _DynamicCraftWrapperState();
 }
 
-class _DynamicCraftWrapperState extends State<DynamicCraftWrapper> {
+class _DynamicCraftWrapperState extends State<DynamicCraftWrapper>
+    with WidgetsBindingObserver {
   final _connectivityService = ConnectivityService();
   final _initRepository = InitRepository();
   final _sessionRepository = SessionRepository();
   final _sharedPref = CommonSharedPref();
-
+  static const Duration idleDuration = Duration(seconds: 10);
+  Timer? _idleTimer;
   var _appTimeout = 100000;
 
   @override
@@ -40,6 +42,27 @@ class _DynamicCraftWrapperState extends State<DynamicCraftWrapper> {
     super.initState();
     showLoadingScreen.value = true;
     initializeApp();
+    WidgetsBinding.instance.addObserver(this);
+    _resetTimer();
+  }
+
+  void _resetTimer() {
+    _idleTimer?.cancel();
+    _idleTimer = Timer(idleDuration, _logout);
+  }
+
+  void _logout() {
+    CommonUtils.getXRouteAndPopAll(widget: widget.appInactivityScreen);
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.paused ||
+        state == AppLifecycleState.detached) {
+      _idleTimer?.cancel();
+    } else if (state == AppLifecycleState.resumed) {
+      _resetTimer();
+    }
   }
 
   initializeApp() async {
@@ -107,31 +130,38 @@ class _DynamicCraftWrapperState extends State<DynamicCraftWrapper> {
             ChangeNotifierProvider(create: (context) => DynamicState()),
             ChangeNotifierProvider(create: (context) => DropDownState()),
           ],
-          child: GetMaterialApp(
-            localizationsDelegates: widget.localizationIsEnabled
-                ? widget.localizationDelegates ?? context.localizationDelegates
-                : null,
-            supportedLocales: widget.localizationIsEnabled
-                ? context.supportedLocales
-                : [const Locale('en')],
-            locale: widget.localizationIsEnabled ? context.locale : null,
-            debugShowCheckedModeBanner: false,
-            theme: widget.appTheme,
-            home: Obx(() {
-              return showLoadingScreen.value
-                  ? widget.appLoadingScreen
-                  : widget.dashboard;
-            }),
-            navigatorKey: Get.key,
-            builder: (context, child) {
-              Provider.of<PluginState>(context, listen: false)
-                  .setLogoutScreen(widget.appTimeoutScreen);
+          child: GestureDetector(
+            behavior: HitTestBehavior.translucent,
+            onTap: _resetTimer,
+            onPanDown: (_) => _resetTimer(),
+            onScaleStart: (_) => _resetTimer(),
+            child: GetMaterialApp(
+              localizationsDelegates: widget.localizationIsEnabled
+                  ? widget.localizationDelegates ??
+                      context.localizationDelegates
+                  : null,
+              supportedLocales: widget.localizationIsEnabled
+                  ? context.supportedLocales
+                  : [const Locale('en')],
+              locale: widget.localizationIsEnabled ? context.locale : null,
+              debugShowCheckedModeBanner: false,
+              theme: widget.appTheme,
+              home: Obx(() {
+                return showLoadingScreen.value
+                    ? widget.appLoadingScreen
+                    : widget.dashboard;
+              }),
+              navigatorKey: Get.key,
+              builder: (context, child) {
+                Provider.of<PluginState>(context, listen: false)
+                    .setLogoutScreen(widget.appTimeoutScreen);
 
-              return MediaQuery(
-                data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
-                child: child!,
-              );
-            },
+                return MediaQuery(
+                  data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
+                  child: child!,
+                );
+              },
+            ),
           ),
         ),
         context: context,
@@ -142,6 +172,8 @@ class _DynamicCraftWrapperState extends State<DynamicCraftWrapper> {
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    _idleTimer?.cancel();
     super.dispose();
   }
 }

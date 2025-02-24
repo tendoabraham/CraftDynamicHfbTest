@@ -1357,8 +1357,12 @@ class _DynamicPhonePickerFormWidgetState
   }
 
   String formatPhone(String phone) {
-    return phone.replaceAll(RegExp(r'\+\d{1,3}'), '');
+    String noSpace = phone.replaceAll(' ', '');
+    return noSpace.replaceAll(RegExp(r'\+\d{1,3}'), '');
   }
+  // String formatPhone(String phone) {
+  //   return phone.replaceAll(RegExp(r'\+\d{1,3}'), '');
+  // }
 }
 
 class DynamicListWidget implements IFormWidget {
