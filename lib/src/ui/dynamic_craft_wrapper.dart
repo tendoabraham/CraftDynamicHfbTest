@@ -35,7 +35,7 @@ class _DynamicCraftWrapperState extends State<DynamicCraftWrapper>
   final _sharedPref = CommonSharedPref();
   static const Duration idleDuration = Duration(minutes: 2);
   Timer? _idleTimer;
-  var _appTimeout = 100000;
+  var _appTimeout = 10000;
 
   @override
   void initState() {
