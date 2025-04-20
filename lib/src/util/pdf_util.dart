@@ -162,7 +162,7 @@ class PDFUtil {
         widget: PDFScreen(
       path: filePath,
       pdfName: receiptname,
-      document: document,
+      // document: document,
       downloadReceipt: downloadReceipt,
       isShare: isShare,
     ));
