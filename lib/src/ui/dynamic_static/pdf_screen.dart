@@ -107,7 +107,7 @@ class _PDFScreenState extends State<PDFScreen> with WidgetsBindingObserver {
                 height: 12,
               ),
               Expanded(
-                child: pdfrx.PdfViewer.asset(
+                child: pdfrx.PdfViewer.file(
                   widget.path ?? "",
                 ),
               )
