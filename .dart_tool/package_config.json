@@ -824,6 +824,12 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "pdfrx",
+      "rootUri": "file:///Users/craft/.pub-cache/hosted/pub.dev/pdfrx-1.1.23",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
+    },
+    {
       "name": "pem",
       "rootUri": "file:///Users/craft/.pub-cache/hosted/pub.dev/pem-2.0.5",
       "packageUri": "lib/",
@@ -1232,7 +1238,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2025-04-22T10:14:54.487747Z",
+  "generated": "2025-04-22T10:20:24.782708Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///Users/craft/development/flutter",

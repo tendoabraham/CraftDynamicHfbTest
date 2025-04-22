@@ -7,14 +7,13 @@ import 'package:path_provider/path_provider.dart';
 import 'package:pdfrx/pdfrx.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:syncfusion_flutter_pdf/pdf.dart';
 
 class PDFScreen extends StatefulWidget {
   final String? path;
   final String? pdfName;
   // final PdfDocument document;
-  bool downloadReceipt;
-  bool isShare;
+  final bool downloadReceipt;
+  final bool isShare;
 
   PDFScreen(
       {Key? key,

@@ -51,6 +51,7 @@ path_provider_android=/Users/craft/.pub-cache/hosted/pub.dev/path_provider_andro
 path_provider_foundation=/Users/craft/.pub-cache/hosted/pub.dev/path_provider_foundation-2.4.1/
 path_provider_linux=/Users/craft/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1/
 path_provider_windows=/Users/craft/.pub-cache/hosted/pub.dev/path_provider_windows-2.3.0/
+pdfrx=/Users/craft/.pub-cache/hosted/pub.dev/pdfrx-1.1.23/
 permission_handler=/Users/craft/.pub-cache/hosted/pub.dev/permission_handler-11.3.1/
 permission_handler_android=/Users/craft/.pub-cache/hosted/pub.dev/permission_handler_android-12.0.13/
 permission_handler_apple=/Users/craft/.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.5/
