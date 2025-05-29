@@ -95,7 +95,7 @@ class _RegularFormWidgetState extends State<RegularFormWidget> {
                                 )),
                             Spacer(),
                             Text(
-                              "${widget.moduleItem?.moduleName}",
+                              "${widget.moduleItem.moduleName}",
                               style: TextStyle(
                                   fontSize: 15,
                                   fontFamily: "DMSans",

@@ -229,7 +229,7 @@ class _StandingOrderItemState extends State<StandingOrderItem> {
                               });
                             },
                             style: ButtonStyle(
-                                minimumSize: MaterialStateProperty.all(
+                                minimumSize: WidgetStateProperty.all(
                                     const Size.fromHeight(40))),
                             icon: Row(
                                 mainAxisSize: MainAxisSize.min,

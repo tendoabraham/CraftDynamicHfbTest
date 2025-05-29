@@ -210,10 +210,8 @@ class _RequestStatusScreenState extends State<RequestStatusScreen>
     if (widget.moduleItem?.moduleId == ModuleId.LANGUAGEPREFERENCE.name) {
       await _sharedPref.setTempLanguage(widget.postDynamic.languageID ?? "ENG");
     }
-    if (logoutScreen != null) {
-      CommonUtils.getXRouteAndPopAll(widget: logoutScreen);
+    CommonUtils.getXRouteAndPopAll(widget: logoutScreen);
     }
-  }
 
   void closePage() {
     Navigator.pop(context);

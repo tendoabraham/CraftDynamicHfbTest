@@ -349,6 +349,17 @@ class ModuleUtil {
               .Deliveries.name); //Ride Deliveries LoadWallet PayMerchants
           break;
         }
+      case ModuleId.AUTHENTICATOR:
+        {
+          {
+            CommonUtils.navigateToRoute(
+                context: context,
+                widget: AppAuthenticator(
+                  isSkyBlueTheme: isSkyBlueTheme,
+                ));
+            break;
+          }
+        }
       case ModuleId.CAKE:
         {
           NativeBinder.invokeMethod(LittleProduct

@@ -91,7 +91,7 @@ class _RadioWidgetState extends State<RadioWidget> {
                                 )),
                             Spacer(),
                             Text(
-                              "${widget.moduleItem?.moduleName}",
+                              "${widget.moduleItem.moduleName}",
                               style: TextStyle(
                                   fontSize: 15,
                                   fontFamily: "DMSans",

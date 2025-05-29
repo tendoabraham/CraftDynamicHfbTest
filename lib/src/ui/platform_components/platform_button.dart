@@ -39,7 +39,7 @@ class AndroidButton implements IElevatedButton {
       Function() function, String buttonTitle, Color? color) {
     return ElevatedButton(
         onPressed: function,
-        style: ButtonStyle(backgroundColor: MaterialStateProperty.all(color)),
+        style: ButtonStyle(backgroundColor: WidgetStateProperty.all(color)),
         child: Text(
           buttonTitle,
           style: TextStyle(

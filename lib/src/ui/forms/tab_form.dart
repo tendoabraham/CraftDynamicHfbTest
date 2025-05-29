@@ -209,7 +209,7 @@ class _TabWidgetState extends State<TabWidget> {
                                 )),
                             Spacer(),
                             Text(
-                              "${widget.moduleItem?.moduleName}",
+                              "${widget.moduleItem.moduleName}",
                               style: TextStyle(
                                   fontSize: 15,
                                   fontFamily: "DMSans",
