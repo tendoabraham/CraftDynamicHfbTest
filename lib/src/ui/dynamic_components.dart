@@ -372,6 +372,7 @@ class _DynamicButtonState extends State<DynamicButton> {
   }
 
   onClick() {
+    FocusManager.instance.primaryFocus?.unfocus();
     if (formItem?.controlId == "CLOSE") {
       Navigator.of(context).pop();
       Navigator.of(context).pop();
@@ -1336,14 +1337,6 @@ class _DynamicPhonePickerFormWidgetState
     );
   }
 
-  // pickPhoneContact() async {
-  //   final PhoneContact contact = await FlutterContactPicker.pickPhoneContact();
-  //   setState(() {
-  //     controller.text = formatPhone(contact.phoneNumber?.number ?? "")
-  //         .replaceAll(RegExp(r'^0'), '');
-  //   });
-  // }
-
   pickPhoneContact() async {
     try {
       final Contact? contact = await _contactPicker.selectPhoneNumber();
@@ -1359,6 +1352,7 @@ class _DynamicPhonePickerFormWidgetState
         setState(() {
           controller.text = formatted;
           inputNumber = number;
+          print("Picked Contact:: ${controller.text}");
         });
       }
     } catch (e) {
@@ -1384,6 +1378,14 @@ class _DynamicPhonePickerFormWidgetState
     String noSpace = phone.replaceAll(' ', '');
     return noSpace.replaceAll(RegExp(r'\+\d{1,3}'), '');
   }
+  // pickPhoneContact() async {
+  //   final PhoneContact contact = await FlutterContactPicker.pickPhoneContact();
+  //   setState(() {
+  //     controller.text = formatPhone(contact.phoneNumber?.number ?? "")
+  //         .replaceAll(RegExp(r'^0'), '');
+  //   });
+  // }
+
   // String formatPhone(String phone) {
   //   return phone.replaceAll(RegExp(r'\+\d{1,3}'), '');
   // }
