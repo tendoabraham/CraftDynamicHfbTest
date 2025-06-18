@@ -13,7 +13,7 @@ class PDFUtil {
     final PdfDocument document = PdfDocument();
     final directory = Platform.isAndroid
         ? await getExternalStorageDirectory()
-        : await getApplicationDocumentsDirectory();
+        : await getApplicationSupportDirectory();
     PdfPage page = document.pages.add();
     bool showImageHeader = true;
 
